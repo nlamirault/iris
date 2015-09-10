@@ -79,15 +79,17 @@ test:
 
 .PHONY: lint
 lint:
-	echo $(SRCS)
+	@echo -e "$(OK_COLOR)[$(APP)] go lint $(NO_COLOR)"
 	@$(foreach file,$(SRCS),golint $(file) || exit;)
 
 .PHONY: vet
 vet:
+	@echo -e "$(OK_COLOR)[$(APP)] go vet $(NO_COLOR)"
 	@$(foreach file,$(SRCS),go vet $(file) || exit;)
 
 .PHONY: coverage
 coverage:
+	@echo -e "$(OK_COLOR)[$(APP)] Code coverage $(NO_COLOR)"
 	@$(foreach pkg,$(PKGS),env GOPATH=`pwd`:`pwd`/vendor go test -cover $(pkg) || exit;)
 
 .PHONY: release

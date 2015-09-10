@@ -21,6 +21,7 @@ import (
 	info "github.com/google/cadvisor/info/v1"
 )
 
+// CAdvisor represents a cAdvisor client
 type CAdvisor struct {
 
 	// cAdvisor client instance
@@ -30,10 +31,11 @@ type CAdvisor struct {
 	Query    *info.ContainerInfoRequest
 }
 
+// Metrics contains cAdvisor metrics
 type Metrics struct {
-	NodeSpec       *info.MachineInfo    `json:"node_spec`
-	NodeInfo       *info.ContainerInfo  `json:"node_info`
-	ContainersInfo []info.ContainerInfo `json:"containers_info`
+	NodeSpec       *info.MachineInfo
+	NodeInfo       *info.ContainerInfo
+	ContainersInfo []info.ContainerInfo
 }
 
 // NewCAdvisor creates an instance of CAdvisor
@@ -59,11 +61,6 @@ func (c *CAdvisor) GetMetrics() (*Metrics, error) {
 	}
 	log.Printf("[DEBUG] [cadvisor] Receive machine info : %#v",
 		nodeSpec)
-	log.Printf("[INFO] [cadvisor] ")
-	log.Printf("[INFO] [cadvisor] ")
-	log.Printf("[INFO] [cadvisor] ")
-	log.Printf("[INFO] [cadvisor] ")
-	log.Printf("[INFO] [cadvisor] ")
 	nodeInfo, err := c.Client.ContainerInfo("/", c.Query)
 	if err != nil {
 		return nil, err
