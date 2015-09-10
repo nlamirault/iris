@@ -1,0 +1,38 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/golang/glog",
+			"repository": "https://github.com/golang/glog",
+			"revision": "fca8c8854093a154ff1eb580aae10276ad6b1b5f",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/google/cadvisor/client",
+			"repository": "https://github.com/google/cadvisor",
+			"revision": "b22a08525784f32fa5f188d2974705a68c68d480",
+			"branch": "master",
+			"path": "/client"
+		},
+		{
+			"importpath": "github.com/google/cadvisor/info/v1",
+			"repository": "https://github.com/google/cadvisor",
+			"revision": "b22a08525784f32fa5f188d2974705a68c68d480",
+			"branch": "master",
+			"path": "/info/v1"
+		},
+		{
+			"importpath": "github.com/google/cadvisor/info/v2",
+			"repository": "https://github.com/google/cadvisor",
+			"revision": "b22a08525784f32fa5f188d2974705a68c68d480",
+			"branch": "master",
+			"path": "/info/v2"
+		},
+		{
+			"importpath": "github.com/hashicorp/logutils",
+			"repository": "https://github.com/hashicorp/logutils",
+			"revision": "0dc08b1671f34c4250ce212759ebd880f743d883",
+			"branch": "master"
+		}
+	]
+}
