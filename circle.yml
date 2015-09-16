@@ -19,8 +19,5 @@ test:
     - go version
     - ls -R /usr/local/go/bin/
   override:
-    - make build
-    - make test
-    - make lint
-    - make vet
-    - make coverage
+    - /home/ubuntu/.go_workspace/bin/gb build all
+    - /home/ubuntu/.go_workspace/bin/gb test all -test.v=true
