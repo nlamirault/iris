@@ -1,5 +1,7 @@
 # Iris
 
+[![Circle CI](https://circleci.com/gh/nlamirault/iris.svg?style=svg)](https://circleci.com/gh/nlamirault/iris)
+
 Iris is a [cadvisor][] client to monitor [Docker][] containers.
 
 ## Usage
@@ -43,5 +45,5 @@ A [changelog](ChangeLog.md) is available
 Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 
+[Docker] : https://docker.com
 [cadvisor]: https://github.com/google/cadvisor
-[docker]: https://docker.com
