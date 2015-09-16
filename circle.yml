@@ -19,8 +19,5 @@ test:
     - go version
     - which go
   override:
-    - make build
-    - make test
-    - make lint
-    - make vet
-    - make coverage
+    - /usr/local/go/bin/gb build all
+    - /usr/local/go/bin/gb test all -test.v=true
