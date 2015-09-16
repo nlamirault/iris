@@ -17,6 +17,7 @@ dependencies:
 test:
   pre:
     - go version
+    - which go
   override:
     - make build
     - make test
