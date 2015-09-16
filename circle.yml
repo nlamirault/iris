@@ -17,7 +17,7 @@ dependencies:
 test:
   pre:
     - go version
-    - which go
+    - ls -R /usr/local/go/bin/
   override:
     - /usr/local/go/bin/gb build all
     - /usr/local/go/bin/gb test all -test.v=true
