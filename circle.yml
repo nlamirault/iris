@@ -8,6 +8,11 @@ machine:
     - docker
 
 dependencies:
+  cache_directories:
+    - "~/docker"
+  override:
+    - docker info
+    - docker pull cadvisor:0.16.0
   post:
     - go get github.com/golang/glog
     - go get github.com/constabulary/gb/...
@@ -18,7 +23,7 @@ test:
   pre:
     - go version
   override:
-    - make init
+    - docker run -d -p 8080:8080 --name cadvisor cadvisor:0.16.0; sleep 20
     - make build
     - make test
     - make lint
