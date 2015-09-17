@@ -45,5 +45,5 @@ A [changelog](ChangeLog.md) is available
 Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 
-[Docker] : https://docker.com
+[Docker]: https://docker.com
 [cadvisor]: https://github.com/google/cadvisor
