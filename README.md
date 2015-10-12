@@ -1,6 +1,14 @@
 # Iris
 
-[![Circle CI](https://circleci.com/gh/nlamirault/iris.svg?style=svg)](https://circleci.com/gh/nlamirault/iris)
+[![License Apache 2][badge-license]](LICENSE)
+[![GitHub version](https://badge.fury.io/gh/nlamirault%2Firis.svg)](https://badge.fury.io/gh/nlamirault%2Firis)
+
+Master :
+* [![Circle CI](https://circleci.com/gh/nlamirault/iris/tree/master.svg?style=svg)](https://circleci.com/gh/nlamirault/iris/tree/master)
+
+Develop :
+* [![Circle CI](https://circleci.com/gh/nlamirault/iris/tree/develop.svg?style=svg)](https://circleci.com/gh/nlamirault/iris/tree/develop)
+
 
 Iris is a [cadvisor][] client to monitor [Docker][] containers.
 
@@ -45,5 +53,9 @@ A [changelog](ChangeLog.md) is available
 Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 
-[Docker] : https://docker.com
+
+[badge-license]: https://img.shields.io/badge/license-Apache2-green.svg?style=flat
+
+
+[Docker]: https://docker.com
 [cadvisor]: https://github.com/google/cadvisor
