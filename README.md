@@ -53,5 +53,9 @@ A [changelog](ChangeLog.md) is available
 Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
 
+
+[badge-license]: https://img.shields.io/badge/license-Apache2-green.svg?style=flat
+
+
 [Docker]: https://docker.com
 [cadvisor]: https://github.com/google/cadvisor
